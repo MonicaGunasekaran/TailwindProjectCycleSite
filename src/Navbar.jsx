@@ -12,7 +12,7 @@ export default function Navbar() {
 
       {/* Center: Navigation */}
       <div className="flex justify-center items-center max-h-50 max-w-300 gap-4 bg-[#b2f2bb] px-4 py-1 rounded-xl">
-        <a href="#" className="text-white font-bold pl-10 text-xl">Home</a>
+        <a href="#" className="text-white font-bold pl-10 text-xl">Kome</a>
         
         <select className="bg-transparent text-white font-bold text-xl">
           <option>Bicycle</option>
