@@ -3,32 +3,27 @@ import person from './assets/person.jpg';
 
 export default function Navbar() {
   return (
-    <nav className="h-20 bg-transparent w-full grid grid-cols-3 items-center px-6">
-      
-      {/* Left: Logo */}
-      <div className="flex items-center">
-        <img src={saddle} className="w-12 h-12 rounded-3xl p-1 bg-white" alt="Logo" />
+    <nav className="w-full h-20 bg-transparent px-4 sm:px-6 flex items-center justify-between">
+      <div className="flex items-center gap-2">
+        <img src={saddle} className="w-10 h-10 rounded-3xl p-1 bg-white" alt="Logo" />
+        <span className="text-white font-bold text-xl sm:hidden">Ride</span>
       </div>
 
-      {/* Center: Navigation */}
-      <div className="flex justify-center items-center max-h-50 max-w-300 gap-4 bg-[#b2f2bb] px-4 py-1 rounded-xl">
-        <a href="#" className="text-white font-bold pl-10 text-xl">Kome</a>
-        
-        <select className="bg-transparent text-white font-bold text-xl">
+      <div className="hidden sm:flex justify-center items-center gap-4 bg-[#b2f2bb] px-4 py-1 rounded-xl">
+        <a href="#" className="text-white font-bold text-base sm:text-lg">Home</a>
+        <select className="bg-transparent text-white font-bold text-base sm:text-lg">
           <option>Bicycle</option>
           <option>Two wheeler</option>
         </select>
-        
         <input
           type="text"
           placeholder="Search"
-          className="pr-5 bg-transparent h-8 px-2 text-white text-lg font-bold  border-white size-50 focus:outline-white focus:outline-1 rounded"
+          className="bg-transparent h-8 px-2 text-white text-sm sm:text-base font-bold border border-white rounded focus:outline-white"
         />
       </div>
 
-      {/* Right: Profile image */}
-      <div className="flex justify-end items-center">
-        <img src={person} alt="User" className="w-10 h-10 rounded-full object-cover" />
+      <div className="flex items-center gap-2">
+        <img src={person} alt="User" className="w-9 h-9 rounded-full object-cover" />
       </div>
     </nav>
   );
